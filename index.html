@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Nome da Empresa | Slogan curto</title>
+  <meta name="description" content="Descrição do site em até 160 caracteres.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700;800&family=Open+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css?v=1">
+</head>
+<body>
+  <!-- Degradê animado fixo atrás da página (aparece em .hero, .section--dark e .cta) -->
+  <canvas class="bg-scene" id="bg-scene" aria-hidden="true"></canvas>
+
+  <header class="header" id="header">
+    <div class="container header__inner">
+      <a class="logo" href="#inicio">Nome da Empresa</a>
+      <button class="nav-toggle" aria-label="Abrir menu" aria-expanded="false" aria-controls="menu"><span></span><span></span><span></span></button>
+      <nav class="nav" id="menu">
+        <a href="#servicos">Serviços</a>
+        <a href="#destaque">Destaque</a>
+        <a href="#como-trabalhamos">Como trabalhamos</a>
+        <a href="#duvidas">Dúvidas</a>
+        <a class="btn btn--small" href="#contato">Fale conosco</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" id="inicio">
+      <div class="container">
+        <div class="hero__content">
+          <p class="eyebrow eyebrow--light">Chamada curta</p>
+          <h1>Título principal com <span>palavra em destaque</span></h1>
+          <p class="hero__lead">Uma ou duas frases explicando o que a empresa faz e para quem.</p>
+          <div class="hero__actions">
+            <a class="btn" href="#contato">Solicitar orçamento</a>
+            <a class="btn btn--ghost" href="#servicos">Ver serviços</a>
+          </div>
+        </div>
+        <ul class="stats">
+          <li><strong>+100</strong><span>Projetos entregues</span></li>
+          <li><strong>10</strong><span>Anos de experiência</span></li>
+          <li><strong>24h</strong><span>Retorno rápido</span></li>
+          <li><strong>100%</strong><span>Clientes atendidos</span></li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="section" id="servicos">
+      <div class="container">
+        <div class="section__head">
+          <p class="eyebrow">Serviços</p>
+          <h2>O que fazemos</h2>
+          <p>Texto de apoio da seção.</p>
+        </div>
+        <div class="cards">
+          <article class="card"><div class="card__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M8 12l3 3 5-6"/></svg></div><h3>Serviço 1</h3><p>Descrição curta do serviço.</p></article>
+          <article class="card"><div class="card__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M8 12l3 3 5-6"/></svg></div><h3>Serviço 2</h3><p>Descrição curta do serviço.</p></article>
+          <article class="card"><div class="card__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M8 12l3 3 5-6"/></svg></div><h3>Serviço 3</h3><p>Descrição curta do serviço.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--alt" id="destaque">
+      <div class="container">
+        <div class="section__head">
+          <p class="eyebrow">Em destaque</p>
+          <h2>Blocos com degradê animado</h2>
+        </div>
+        <div class="features">
+          <!-- data-flow: main | fire | water | olive (paletas em :root) -->
+          <article class="feature feature--water">
+            <canvas class="feature__flow" data-flow="water" aria-hidden="true"></canvas>
+            <div class="feature__intro">
+              <p class="feature__eyebrow">Destaque 1</p>
+              <h3>Título do destaque</h3>
+              <p>Descrição do serviço em destaque.</p>
+              <a class="btn btn--light" href="#contato">Solicitar orçamento</a>
+            </div>
+            <ul class="checks"><li>Item de lista um</li><li>Item de lista dois</li><li>Item de lista três</li></ul>
+          </article>
+          <article class="feature feature--fire">
+            <canvas class="feature__flow" data-flow="fire" aria-hidden="true"></canvas>
+            <div class="feature__intro">
+              <p class="feature__eyebrow">Destaque 2</p>
+              <h3>Outro destaque</h3>
+              <p>Descrição do serviço em destaque.</p>
+              <a class="btn btn--light" href="#contato">Solicitar orçamento</a>
+            </div>
+            <ul class="checks"><li>Item de lista um</li><li>Item de lista dois</li><li>Item de lista três</li></ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--dark" id="como-trabalhamos">
+      <div class="container">
+        <div class="section__head section__head--light">
+          <p class="eyebrow eyebrow--light">Como trabalhamos</p>
+          <h2>Em quatro etapas</h2>
+          <p>Seção escura e translúcida: mostra o degradê do fundo.</p>
+        </div>
+        <ol class="steps">
+          <li><p class="steps__num">1</p><h3>Etapa</h3><p>Descrição.</p></li>
+          <li><p class="steps__num">2</p><h3>Etapa</h3><p>Descrição.</p></li>
+          <li><p class="steps__num">3</p><h3>Etapa</h3><p>Descrição.</p></li>
+          <li><p class="steps__num">4</p><h3>Etapa</h3><p>Descrição.</p></li>
+        </ol>
+      </div>
+    </section>
+
+    <section class="section" id="duvidas">
+      <div class="container faq">
+        <div class="section__head">
+          <p class="eyebrow">Dúvidas</p>
+          <h2>Perguntas frequentes</h2>
+        </div>
+        <details><summary>Pergunta um?</summary><p>Resposta.</p></details>
+        <details><summary>Pergunta dois?</summary><p>Resposta.</p></details>
+        <details><summary>Pergunta três?</summary><p>Resposta.</p></details>
+      </div>
+    </section>
+
+    <section class="cta">
+      <div class="container cta__inner">
+        <div><h2>Vamos conversar?</h2><p>Chamada final para contato.</p></div>
+        <a class="btn btn--light" href="#contato">Fale conosco</a>
+      </div>
+    </section>
+
+    <section class="section" id="contato">
+      <div class="container contact">
+        <div class="contact__info">
+          <p class="eyebrow">Contato</p>
+          <h2>Peça seu orçamento</h2>
+          <p>Preencha o formulário e a mensagem abre pronta no WhatsApp ou no e-mail.</p>
+        </div>
+        <!-- Troque o número (DDI+DDD+número) e o e-mail -->
+        <form class="form" id="contact-form" novalidate data-whatsapp="5511999999999" data-email="contato@exemplo.com">
+          <div class="form__row"><label for="nome">Nome</label><input id="nome" name="Nome" required></div>
+          <div class="form__row"><label for="telefone">Telefone/WhatsApp</label><input id="telefone" name="Telefone" required></div>
+          <div class="form__row"><label for="mensagem">Mensagem</label><textarea id="mensagem" name="Mensagem" rows="4" required></textarea></div>
+          <p class="form__error" id="form-error" hidden>Preencha os campos obrigatórios.</p>
+          <div class="form__actions">
+            <button class="btn" type="submit" data-channel="whatsapp">Enviar por WhatsApp</button>
+            <button class="btn btn--ghost" style="color:var(--brand-800);border-color:var(--brand-800)" type="submit" data-channel="email">Enviar por e-mail</button>
+          </div>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__bottom">
+      <p>© <span id="year"></span> Nome da Empresa. Todos os direitos reservados.</p>
+    </div>
+  </footer>
+
+  <script src="assets/js/scene.js?v=1" defer></script>
+  <script src="assets/js/main.js?v=1" defer></script>
+</body>
+</html>
